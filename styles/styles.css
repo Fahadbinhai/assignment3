@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    font-family: "Sora", serif;
+}
+
+
+/* herder class style start */
+
+.header-class {
+    background: linear-gradient(180.00deg, rgb(255, 255, 255), rgb(239, 235, 227) 100%);
+}
+
+.nav-style {
+    margin: 24px 141px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nature-logo {
+    display: flex;
+    align-items: center;
+}
+
+.school-style {
+    color: rgb(17, 17, 17);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0px;
+    margin-left: 11px;
+
+}
+
+.list-container {
+    margin-left: 200px;
+}
+
+.lists {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    /* font-weight: 400; */
+    color: rgb(17, 17, 17);
+}
+
+.nav-btn {
+    border-radius: 8px;
+    background: rgb(23, 152, 0);
+    width: 146px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 30px;
+    border: none;
+}
+
+.nav-btn1 {
+    box-sizing: border-box;
+    border: 1px solid rgb(23, 152, 0);
+    border-radius: 8px;
+    padding: 10px 30px;
+    width: 117px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(17, 17, 17);
+}
+
+.bar-icons {
+    display: none;
+}
+
+.hr-line {
+    display: none;
+    border: 0.5px solid #179800;
+}
+
+
+/* banner section */
+.big-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.big-img {
+    margin: 200px;     
+    max-width: 100%;  
+    height: auto; 
+}
+@media screen and (max-width:640px) {
+
+    /* responsive navbar section */
+    .nav-style {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .nature-logo img {
+        content: url(../c2-assets/logo-footer.png);
+        width: 80px;
+    }
+
+    .list-container,
+    .icon-button {
+        display: none;
+    }
+
+    .bar-icons {
+        display: block;
+    }
+
+    .hr-line {
+        display: block;
+    }
+
+    /* responsive banner section */
+
+    .big-img {
+       
+        max-width: 300px;
+          
+}
+  
+}
