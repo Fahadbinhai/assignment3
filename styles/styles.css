@@ -106,13 +106,24 @@
 .popular-card {
     border-radius: 10px;
     /* background-image: url(../c2-assets/vegetable-offer.png); */
-    background: linear-gradient(to right, rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0.1) 70%, rgba(0, 0, 0, 0)), 
-    url('../c2-assets/vegetable-offer.png');
+    background: linear-gradient(to right, rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0.1) 70%, rgba(0, 0, 0, 0)),
+        url('../c2-assets/vegetable-offer.png');
     background-repeat: no-repeat;
     background-position: bottom right;
     width: 424px;
     height: 402px;
     box-shadow: white;
+}
+
+/*  onion tomato section */
+
+.small-card {
+    width: 275px;
+    height: 118px;
+    box-sizing: border-box;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
 }
 
 
@@ -149,5 +160,13 @@
         max-width: 300px;
 
     }
+
+    /* small card design */
+
+    /* .small-card {
+        width: 100%; 
+        height: auto; 
+        padding: 10px;
+    } */
 
 }
