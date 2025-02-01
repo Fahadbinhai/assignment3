@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,47 +8,122 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/c77285963e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-   <header class="header-class">
-    <!-- navbar section -->
-    <nav class="nav-style lg:mb-20">
-        <div class="nature-logo">
-            <img src="c2-assets/logo-header.png" alt="">
-        </div>
-        <div class="list-container">
-            <li class="lists">
-                <ul>Product</ul>
-                <ul>Services</ul>
-                <ul>Contact us</ul>
-            </li>
-        </div>
+    <header class="header-class">
+        <!-- navbar section -->
+        <nav class="nav-style lg:mb-20">
+            <div class="nature-logo">
+                <img src="c2-assets/logo-header.png" alt="">
+            </div>
+            <div class="list-container">
+                <li class="lists">
+                    <ul>Product</ul>
+                    <ul>Services</ul>
+                    <ul>Contact us</ul>
+                </li>
+            </div>
 
-        <div class="icon-button">
-            <i class="fa-solid fa-magnifying-glass mr-5"></i>
-            <i class="fa-solid fa-cart-shopping mr-5"></i>
-            <button class="nav-btn1">Login</button>
-            <button class="nav-btn">Register</button>
-        </div>
-        <div class="bar-icons">
-            <i class="fa-solid fa-bars text-green-600"></i>
-        </div>
-    </nav>
-    <hr class="hr-line">
+            <div class="icon-button">
+                <i class="fa-solid fa-magnifying-glass mr-5"></i>
+                <i class="fa-solid fa-cart-shopping mr-5"></i>
+                <button class="nav-btn1">Login</button>
+                <button class="nav-btn">Register</button>
+            </div>
+            <div class="bar-icons">
+                <i class="fa-solid fa-bars text-green-600"></i>
+            </div>
+        </nav>
+        <hr class="hr-line">
 
-    <!-- banner section -->
-    <section class="mt-10">
-        <h3 class="text-3xl lg:text-5xl px-8 font-semibold text-center">Freshness <span class="text-green-600">You Can <br> Count</span> On, Prices You’ll Love!</h3>
-        <p class="text-base lg:text-lg mt-5 px-8 text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+        <!-- banner section -->
+        <section class="mt-10">
+            <h3 class="text-3xl lg:text-5xl px-8 font-semibold text-center">Freshness <span class="text-green-600">You
+                    Can <br> Count</span> On, Prices You’ll Love!</h3>
+            <p class="text-base lg:text-lg mt-5 px-8 text-center">Shop your daily essentials at unbeatable prices. From
+                fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
 
-        <div class="big-pic">
-            <img class="" src="c2-assets/hero-vegetables.png" alt="">
-        </div>
-    </section>
-   </header>
+            <div class="big-pic">
+                <img class="" src="c2-assets/hero-vegetables.png" alt="">
+            </div>
+        </section>
+    </header>
 
-   <main>
-   </main>
-   <footer></footer>
+    <!-- main section starts -->
+    <main>
+        <!-- services section -->
+        <section class="my-7 lg:mx-36 lg:my-36">
+            <h3 class="text-3xl font-semibold ml-10 text-er-color">Services</h3>
+            <!-- card section -->
+            <div class="m-5 lg:m-10 grid grid-cols-1 lg:grid-cols-3">
+                <!-- card 1 -->
+                <div
+                    class="card-bg w-auto lg:w-96 lg:h-80 my-4 shadow-xl border-0 rounded-2xl p-6 text-center border border-gray-300">
+                    <div class="flex justify-center">
+                        <div class="bg-white p-3 rounded-full shadow-md">
+                            <img class="w-20 h-20" src="c2-assets/service.png" alt="24/7 Service">
+                        </div>
+                    </div>
+                    <!-- <hr class="my-4 border-gray-300 w-16 mx-auto"> -->
+                    <h2 class="text-xl font-bold text-gray-800 mt-5">24/7 Services</h2>
+                    <p class="text-gray-600 text-sm mt-2">A 24/7 supermarket offers unmatched convenience, ensuring
+                        customers can shop anytime—day or night.</p>
+                </div>
+                <!-- card 2 -->
+                <div
+                    class="card-bg w-auto lg:w-96 lg:h-80 my-4 shadow-xl border-0 rounded-2xl p-6 text-center border border-gray-300">
+                    <div class="flex justify-center">
+                        <div class="bg-white p-3 rounded-full shadow-md">
+                            <img class="w-20 h-20" src="c2-assets/delivery.png" alt="">
+                        </div>
+                    </div>
+                    <!-- <hr class="my-4 border-gray-300 w-16 mx-auto"> -->
+                    <h2 class="text-xl font-bold text-gray-800 mt-5">Fast Delivery</h2>
+                    <p class="text-gray-600 text-sm mt-2">Food delivery offers convenience by bringing fresh, delicious
+                        meals and groceries straight to your doorstep. </p>
+                </div>
+                <!-- card 3 -->
+                <div
+                    class="card-bg w-auto lg:w-96 lg:h-80 my-4 shadow-xl border-0 rounded-2xl p-6 text-center border border-gray-300">
+                    <div class="flex justify-center">
+                        <div class="bg-white p-3 rounded-full shadow-md">
+                            <img class="w-20 h-20" src="c2-assets/healthy.png" alt="">
+                        </div>
+                    </div>
+                    <!-- <hr class="my-4 border-gray-300 w-16 mx-auto"> -->
+                    <h2 class="text-xl font-bold text-gray-800 mt-5">Healthy Products</h2>
+                    <p class="text-gray-600 text-sm mt-2">Healthy products promote a balanced lifestyle by offering
+                        nutritious and natural ingredients that support overall well-being.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- popular product section -->
+
+        <section class="card-bg p-36">
+
+            <h3 class="text-4xl font-semibold text-[#179800] mb-12">Popular Products</h3>
+
+            <div>
+                <!-- popular card 1 -->
+                <div class="popular-card">
+                    <h3 class="px-10 pt-16 text-white text-4xl font-semibold mb-4">30% off</h3>
+                    <p class="px-10 mb-5 ">Discover a world of treats,toys and <br> essential handpicked for</p>
+                    <div class="pl-10">
+                        <button class="btn bg-white text-black">Buy Now</button>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer></footer>
 </body>
+
 </html>
