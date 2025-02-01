@@ -47,7 +47,7 @@
                 fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
 
             <div class="big-pic">
-                <img class="" src="c2-assets/hero-vegetables.png" alt="">
+                <img class="big-img" src="c2-assets/hero-vegetables.png" alt="">
             </div>
         </section>
     </header>
@@ -101,6 +101,42 @@
             </div>
         </section>
 
+        <section class="mx-[150px] my-[50px]">
+            <h3 class="text-4xl font-semibold text-[#179800] mb-12">Outlets</h3>
+            <div class="flex flex-col lg:flex-row gap-28">
+                <!-- barnch 1 -->
+                <div class="card bg-primary text-primary-content w-96">
+                    <div class="card-body">
+                        <h2 class="card-title">Mirpur barnch</h2>
+                        <p>Mirpur mazar road,<br> near prime university, Mirpur</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn"><i class="fa-solid fa-location-dot"></i> See location</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- baranch 2 -->
+                <div class="card bg-primary text-primary-content w-96">
+                    <div class="card-body">
+                        <h2 class="card-title">Dhanmondi barnch</h2>
+                        <p>Metro shopping complex, <br> Dhanmondi-32</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn"><i class="fa-solid fa-location-dot"></i> See location</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- barnch 3 -->
+                <div class="card bg-primary text-primary-content w-96">
+                    <div class="card-body">
+                        <h2 class="card-title">Jatrabari barnch</h2>
+                        <p>Jatrabari bus stop, <br> Jatrabari</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn"><i class="fa-solid fa-location-dot"></i> See location</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- popular product section -->
 
@@ -122,7 +158,7 @@
                 <!-- onion tomato section -->
 
                 <!-- container div for all small card -->
-                <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-x-6">
+                <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-x-6 mt-[15px]">
                     <!-- card 1 -->
                     <div class="small-card">
                         <div class="flex">
@@ -131,7 +167,7 @@
                                 <img class="px-2 py-3" src="c2-assets/onion.png" alt="">
                             </div>
                             <!-- text section for small card -->
-                            <div class="flex flex-col lg:pt-6">
+                            <div class="flex flex-col pt-6">
                                 <div class="flex gap-3">
                                     <!-- star -->
                                     <div>
@@ -371,19 +407,77 @@
         </section>
 
         <!--  arrival and offer section -->
-        <section>
-            <h3>Arrival & Offers</h3>
-            <!-- daawat section -->
-            <div>
-                <img src="c2-assets/dawat-logo.png" alt="">
-                <button>Cook Exotic Dishes</button>
-                <h3>UP to 20% OFF</h3>
+        <section class="lg:mb-[300px] lg:mx-[140px] lg:mt-[140px] mb-[400px]">
+            <h3 class="arrival">Arrival & Offers</h3>
+            <div class="flex flex-col lg:flex-row gap-10">
+                <!-- daawat section -->
+                <div class="daawat-section">
+                    <div>
+                        <img class="mb-8" src="c2-assets/dawat-logo.png" alt="">
+                        <button class="dawat-btn text-white mb-8">Cook Exotic Dishes</button>
+                        <h3 class="off-20">UP to <span class="off-20p">20% OFF</span></h3>
+                    </div>
+                    <div>
+                        <img src="c2-assets/dawat-mock-up.png" alt="">
+                    </div>
+                </div>
+
+                <!-- india gate section -->
+                <div class="india-gate">
+                    <div>
+                        <img src="c2-assets/india-gate-logo.png" alt="">
+                        <button class="rice-btn">World’s No.1 Rice</button>
+                        <h3 class="off-20">UP to <span class="off-20p">40% OFF</span></h3>
+                    </div>
+
+                    <div>
+                        <img class="w-44" src="c2-assets/india-gate-mock-up.png" alt="">
+                    </div>
+                </div>
             </div>
-            <!-- india gate section -->
-            <div></div>
+        </section>
+
+
+
+
+        <!-- Get Grocery News section -->
+        <section class="news-scetion-bg lg:mx-36 lg:-my-52 -my-[350px]">
+            <div class="flex items-center gap-32 soray-dibo ">
+                <div><img src="c2-assets/vegetable-busket.png" alt=""></div>
+
+                <div>
+                    <h3 class="grocery">Get Grocery News!</h3>
+                    <p class="grocery-paragraph">Exclusive training tips, ticks, product deals and more.</p>
+                    <input placeholder="Enter email...." class="input-email" type="email" name="" id="">
+                    <br>
+                    <button class="subscribe-btn text-white">Subscribe</button>
+                </div>
+            </div>
         </section>
     </main>
-    <footer></footer>
+
+
+    <footer class="footer-bg">
+        <div class="footer-style">
+            <!-- footer part 1 -->
+            <div>
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p class="paragraph-1">Discover a world of treats, toys, and essentials handpicked for your furry
+                    friends</p>
+            </div>
+            <!-- footer part 2 -->
+            <div>
+                <p class="middle-part">Product</p>
+                <p class="middle-part">Service</p>
+                <p class="middle-part">Contact us</p>
+            </div>
+            <!-- footer part 3 -->
+            <div>
+                <p class="follow">Follow Us</p>
+                <img src="c2-assets/social media.png" alt="">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

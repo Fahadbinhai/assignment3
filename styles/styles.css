@@ -77,17 +77,44 @@
 
 
 /* banner section */
+/* .big-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+} */
+
 .big-pic {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    overflow: hidden; /* To make sure the animation doesn't overflow the container */
 }
 
-.big-img {
+/* .big-img {
     margin: 200px;
     max-width: 100%;
     height: auto;
+} */
+
+.big-img {
+    margin: 200px; /* Remove margin if needed */
+    width: 75%; /* Make sure the image takes full width */
+    height: auto;
+    animation: slideEffect 20s linear infinite; /* Animation applied here */
+}
+
+@keyframes slideEffect {
+    0% {
+        transform: translateX(0); /* Starts at original position */
+    }
+    50% {
+        transform: translateX(-50%); /* Moves to the left */
+    }
+    100% {
+        transform: translateX(0); /* Returns to the original position */
+    }
 }
 
 /* sertices section */
@@ -126,6 +153,161 @@
     background: rgb(255, 255, 255);
 }
 
+/* daawat and india gate section */
+
+.daawat-section {
+    width: 780px;
+    height: 344px;
+    border-radius: 24px;
+    background: rgb(17, 84, 20);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+
+}
+
+.dawat-btn {
+    border-radius: 13.29px;
+    background: rgb(99, 183, 109);
+    padding: 14.96px 33.24px 14.96px 33.24px;
+    width: 334px;
+    height: 65px;
+    color: rgb(255, 255, 255);
+    font-size: 23.27px;
+    font-weight: 400;
+}
+
+.off-20 {
+    color: rgb(255, 255, 255);
+    font-size: 39.88px;
+    font-weight: 400;
+}
+
+.off-20p {
+    color: rgb(255, 255, 255);
+    font-size: 39.88px;
+    font-weight: 700;
+}
+
+.india-gate {
+    border-radius: 24px;
+    background: rgb(16, 40, 97);
+    width: 520px;
+    height: 344px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.rice-btn {
+    border-radius: 13.29px;
+    background: rgb(42, 77, 151);
+    width: 280px;
+    height: 65px;
+    padding: 14.96px 33.24px 14.96px 33.24px;
+    color: rgb(255, 255, 255);
+    font-size: 23.27px;
+    font-weight: 400;
+}
+
+.arrival {
+    color: rgb(23, 152, 0);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 48px;
+}
+
+/* get news section */
+
+.news-scetion-bg {
+    border-radius: 24px;
+    background: rgb(239, 235, 227);
+    /* margin: 60px 140px; */
+    padding: 55px 110px;
+    /* position: absolute; */
+    /* left: 40%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 80%; */
+    margin-top: -150px;
+    position: relative;
+    z-index: 10;
+}
+
+/* challenge section {get Grocery news section } */
+
+.grocery {
+    color: rgb(17, 17, 17);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.grocery-paragraph {
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 38px;
+}
+
+.input-email {
+    width: 472px;
+    height: 57px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 48px;
+}
+
+.subscribe-btn {
+    border-radius: 8px;
+    background: rgb(23, 152, 0);
+    width: 164px;
+    height: 45px;
+    padding: 10px 30px 10px 30px;
+}
+
+/* footer section */
+
+.footer-bg {
+    background: rgb(23, 152, 0);
+    height: 658px;
+    position: relative;
+}
+
+.footer-style {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 350px;
+    padding: 350px 140px;
+
+}
+
+.paragraph-1 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    font-weight: 400;
+    width: 426px;
+    height: 75px;
+}
+
+.middle-part {
+    color: rgb(239, 235, 227);
+    font-size: 20px;
+    font-weight: 400;
+    width: 82px;
+    height: 25px;
+    margin-bottom: 32px;
+}
+
+.follow {
+    color: rgb(239, 235, 227);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
 
 @media screen and (max-width:640px) {
 
@@ -161,12 +343,108 @@
 
     }
 
-    /* small card design */
+    /* dawaat section */
 
-    /* .small-card {
-        width: 100%; 
-        height: auto; 
+    .daawat-section {
+        width: 100%;
+        height: auto;
+        /* flex-direction: column; */
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .india-gate {
+        width: 100%;
+        height: auto;
+        /* flex-direction: column; */
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 120px;
+    }
+
+    .dawat-btn,
+    .rice-btn {
+        width: 100%;
+        font-size: 18px;
+        height: auto;
         padding: 10px;
-    } */
+    }
+
+    .off-20 {
+        font-size: 28px;
+    }
+
+    .off-20p {
+        font-size: 28px;
+    }
+
+    .arrival {
+        font-size: 28px;
+        margin-left: 25px;
+        
+    }
+
+    .india-gate img,
+    .daawat-section img {
+        width: 80%;
+        height: auto;
+    }
+
+
+
+    .footer-bg{
+        height: 800px;
+    }
+
+    .news-scetion-bg {
+        /* margin-top: -80px; Footer er upor overlap korar jonno */
+        padding: 30px;
+        text-align: center;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .soray-dibo {
+        flex-direction: column;
+        gap: 20px;
+        /* align-items: center; */
+    }
+
+    .soray-dibo img {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .input-email {
+        width: 100%;
+    }
+
+    .subscribe-btn {
+        width: 40%;
+    }
+
+    .footer-style {
+        flex-direction: column;
+        align-items: flex-start; 
+        gap: 20px;
+        padding: 50px 20px;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 250px;
+        padding-top: 370px;
+    }
+
+    .paragraph-1 {
+        width: auto;
+    }
+
+    .middle-part{
+        text-align: left;
+    }
 
 }
